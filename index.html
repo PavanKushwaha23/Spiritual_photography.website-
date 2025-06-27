@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divine Visions - Hindu Gods & Temples Photography</title> 
+    
+    <!-- GSAP Animation Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+     <header>
+<!-- Navbar -->
+    <nav class="navbar">
+        <a href="#" class="navbar-brand">
+            <i class="fas fa-om"></i> Divine Visions
+        </a>
+        <button class="navbar-toggle" id="navbarToggle">
+            <i class="fas fa-bars"></i>
+        </button>
+        <ul class="navbar-menu" id="navbarMenu">
+            <li class="navbar-item">
+                <a href="#home" class="navbar-link">Home</a>
+            </li>
+            <li class="navbar-item">
+                <a href="#about" class="navbar-link">About</a>
+            </li>
+            <li class="navbar-item">
+                <a href="#gallery" class="navbar-link">Gallery</a>
+            </li>
+            <li class="navbar-item">
+                <a href="#contact" class="navbar-link">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    
+    
+ </header>
+
+ <main>
+  <!-- Hero Section with Carousel -->
+    <section class="hero" id="home">
+        <!-- Carousel -->
+        <div class="carousel">
+            <div class="carousel-inner" id="carouselInner">
+                <div class="carousel-item">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/8e484636-3f89-4417-a6c8-e0908905feb4.png" alt="Golden sunrise over ancient Hindu temple with intricate carvings of deities" class="carousel-img" />
+                </div>
+                <div class="carousel-item">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d7511d97-165f-4d66-8944-395a8203611c.png" alt="Majestic statue of Lord Shiva in meditation surrounded by flowers and offerings" class="carousel-img" />
+                </div>
+                <div class="carousel-item">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/2fcb2420-29b9-4eab-a4cb-1b7ee0f13506.png" alt="Vibrant festival procession with devotees carrying decorated idols through temple courtyard" class="carousel-img" />
+                </div>
+             </div>
+        </div>
+
+        <!-- Divine Pattern SVG -->
+        <svg class="divine-pattern" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <pattern id="pattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                <circle cx="10" cy="10" r="1" fill="var(--primary)" />
+                <path d="M0 0 L20 20 M20 0 L0 20" stroke="var(--secondary)" stroke-width="0.5" />
+            </pattern>
+            <rect x="0" y="0" width="100" height="100" fill="url(#pattern)" />
+        </svg>
+
+        <div class="hero-content">
+            <h1 class="hero-title" id="animatedTitle">Divine Visions</h1>
+            <p class="hero-subtitle" id="animatedSubtitle">Capturing the Spiritual Essence of Hindu Gods & Temples</p>
+            <a href="#gallery" class="hero-btn">Explore Gallery</a>
+        </div>
+    </section>
+     <!-- About Section -->
+    <section class="section" id="about">
+        <h2 class="section-title">About The Project</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Divine Visions is a spiritual photography project dedicated to capturing the timeless beauty and sacred energy of Hindu deities and temple architecture across India.</p>
+                <p>Through my lens, I seek to document not just the physical forms of our gods and goddesses, but the divine presence that radiates from these sacred spaces.</p>
+                <p>Each photograph is a meditation, taken during sacred ceremonies, golden hours, and moments of profound devotion to preserve the spiritual essence for generations to come.</p>
+            </div>
+            <div class="about-image">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/8b79b899-e981-4538-9510-e7ab4a3d5610.png" alt="Photographer capturing details of ancient temple carvings during golden hour" class="about-img" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="section" id="gallery">
+        <h2 class="section-title">Divine Gallery</h2>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e8cbd904-13aa-4a10-9665-ccaf04dc53be.png" alt="Lord Shiva statue in meditative pose" class="gallery-img">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">Lord Shiva</h3>
+                    <p class="gallery-location">Varanasi, India</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/5c689cec-b0af-496d-9e82-75f8491fc00a.png" alt="Lord Krishna playing flute with peacock feathers" class="gallery-img">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">Lord Krishna</h3>
+                    <p class="gallery-location">Mathura, India</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/f814efd5-6991-45f5-9411-916cfeae23d4.png" alt="Colorful gopuram of Meenakshi Temple" class="gallery-img">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">Meenakshi Temple</h3>
+                    <p class="gallery-location">Madurai, India</p>
+                </div>
+            </div>
+    
+          <div class="gallery-item">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/50738687-1529-4ab9-b572-cd9a96d59d9a.png" alt="Golden statue of Lord Ganesha with floral decorations" class="gallery-img">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">Lord Ganesha</h3>
+                    <p class="gallery-location">Pune, India</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/94bcb630-59b2-4909-bc04-68f1544bed0e.png" alt="Crowd of devotees at Tirupati Balaji Temple" class="gallery-img">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">Tirupati Temple</h3>
+                    <p class="gallery-location">Andhra Pradesh</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/6719266a-6fab-4960-9e4a-95eaa505b5d7.png" alt="White marble statue of Goddess Saraswati playing veena" class="gallery-img">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">Goddess Saraswati</h3>
+                    <p class="gallery-location">Various Locations</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/7cb2077c-dc1a-4d21-b61a-276ca4cf7435.png" alt="Colorful Jagannath Temple chariot during Rath Yatra" class="gallery-img">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">Jagannath Temple</h3>
+                    <p class="gallery-location">Puri, India</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/326d88f6-205c-47ea-93e5-c4ae1bf6d888.png" alt="Tall statue of Lord Hanuman watching over devotees" class="gallery-img">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">Lord Hanuman</h3>
+                    <p class="gallery-location">Delhi, India</p>
+                </div>
+            </div>
+          <div class="gallery-item">
+                    <img src="Badrinath dham.jpg" alt="Snow-covered Badrinath Temple in Himalayas" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Badrinath</h3>
+                        <p class="gallery-location">Uttarakhand (Char Dham)</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/c41d9238-7a0a-4c8c-b8c9-3230469335ee.png" alt="Golden shikara of Dwarkadhish Temple by Arabian Sea" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Dwarkadhish</h3>
+                        <p class="gallery-location">Gujarat (Char Dham)</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="jagganath puri.jpg" alt="Grand Jagannath Temple with towering spire" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Jagannath Puri</h3>
+                        <p class="gallery-location">Odisha (Char Dham)</p>
+                    </div>
+                </div>
+              <div class="gallery-item">
+                    <img src="Maa kamakhya.jpg" alt="Kamakhya Temple with Nilachal hill backdrop" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Kamakhya Devi</h3>
+                        <p class="gallery-location">Assam (Shaktipeeth)</p>
+                        <p class="gallery-location">One of 51 Shaktipeeths</p>
+                    </div>
+                </div>
+               
+                
+                <div class="gallery-item">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/245fae9d-cc98-469d-8c96-935d0926ed05.png" alt="Eternal flames at Jwalamukhi Temple" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Jwalamukhi</h3>
+                        <p class="gallery-location">Himachal Pradesh (Shaktipeeth)</p>
+                        <p class="gallery-location">Sacred Flames Temple</p>
+                    </div>
+                </div>
+
+          <!-- Kolkata Shaktipeeths -->
+            <div class="gallery-item">
+                <img src="kalighatTemple.jpg" alt="Kalighat Kali Temple with devotees" class="gallery-img">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">Kalighat Kali</h3>
+                    <p class="gallery-location">Kolkata (Shaktipeeth)</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="Dakshania Kali.jpg" alt="Dakshineswar Temple by Ganges river" class="gallery-img">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">Dakshineswar</h3>
+                    <p class="gallery-location">Kolkata (Shaktipeeth)</p>
+                </div>
+            </div>
+
+             <div class="gallery-item">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/6d2a2105-dc95-4512-a193-aa1dc0a30839.png" alt="Long pillared corridor of Rameshwaram Temple" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Rameshwaram</h3>
+                        <p class="gallery-location">Tamil Nadu (Char Dham)</p>
+                    </div>
+                </div>
+              <div class="gallery-item">
+                    <img src="mahakla.jpg" alt="Mahakal Temple" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Mahakaleshwar</h3>
+                        <p class="gallery-location">Ujjain, Madhya Pradesh</p>
+                    </div>
+                </div>
+           <div class="gallery-item">
+                    <img src="prem mandir.webp" alt="Prem Mandir " class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Prem Mandir</h3>
+                        <p class="gallery-location">Mathura, Uttar Pradesh</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="vaishno devi.jpg" alt="Vaishno Devi Temple" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Vaishno Devi</h3>
+                        <p class="gallery-location">Katra, Jammu & Kashmir</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="somnath.jpeg" alt="Somnath Temple" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Somnath</h3>
+                        <p class="gallery-location">Gujarat, India</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="Kedarnath.avif" alt="Kedarnath Temple" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Kedarnath Dham</h3>
+                        <p class="gallery-location">UttarKashi, Uttarakhand</p>
+                    </div>
+                </div><div class="gallery-item">
+                    <img src="amarnath.jpg" alt="Amarnath Cave" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title"> Amarnath</h3>
+                        <p class="gallery-location"> Kashmir</p>
+                    </div>
+                </div><div class="gallery-item">
+                    <img src="radhaKrishna.jpg" alt="radhaKrishna" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Radha-Krishna</h3>
+                        <p class="gallery-location">Vrindavan,  Uttar Pradesh</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="sun temple konark.jpg" alt="Sun Temple" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Sun Temple</h3>
+                        <p class="gallery-location">Konark, Udisha</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="maa sharda maihar.jpg" alt="Maa Sharda Temple" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Maa Sharda</h3>
+                        <p class="gallery-location">Maihar, Madhya Pradesh</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="mahakal.jpeg" alt="Mahakal Temple" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Mahakaleshwar</h3>
+                        <p class="gallery-location">Ujjain, Madhya Pradesh</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="Lord Ram.jpg" alt="Ram Temple" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Lord Ram</h3>
+                        <p class="gallery-location">Ayodhya, Uttar Pradesh</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="Maa Laxmi.jpg" alt="Mahalakshmi Temple" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title"> Maa MahaLakshmi</h3>
+                        <p class="gallery-location">Mumbai, Maharashtra</p>
+                    </div>
+                </div>
+   
+                <div class="gallery-item">
+                    <img src="Lord Murugan.jpg" alt="Lord Murugan Temple" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Lord Murugan</h3>
+                        <p class="gallery-location">Tamilnadu ,India</p>
+                    </div>
+                </div>
+               
+                <div class="gallery-item">
+                    <img src="Chhinnamastika_Temple_Rajrappa.jpg" alt="Chhinnamastika Temple" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title"> Maa Chhinnamastika Temple</h3>
+                        <p class="gallery-location">Jharkhand ,India</p>
+                    </div>
+                </div>
+               
+                <div class="gallery-item">
+                    <img src="Ambaji_temple_2856.jpg" alt="Ambaji Temple" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Ambaji Temple</h3>
+                        <p class="gallery-location">Gujarat, India</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="Shri-Radha-Rani-Temple-Barsana.jpg" alt=" Shri-Radha-Rani-Temple" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title"> Shri Radha-Rani </h3>
+                        <p class="gallery-location">Barsana ,Mathura U.P.</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="maa jwala.avif" alt="Jwalamukhi Temple" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Maa Jwala ji</h3>
+                        <p class="gallery-location">Kangra ,Himachal Pradesh.</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="Narmada-Kund-Temples.jpg" alt=" Narmada-Kund-Temples" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Maa Narmada Temple</h3>
+                        <p class="gallery-location">Amarkantak ,Madhya Pradesh</p>
+                    </div>
+                </div>
+
+
+                <div class="gallery-item">
+                    <img src="siddhivinayak-temple-mumbai-maharashtra-1-attr-hero.jpeg" alt="Siddhivinayak-Temple" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Siddhivinayak Temple</h3>
+                        <p class="gallery-location">Mumbai ,Maharashtra</p>
+                    </div>
+                </div>
+
+
+                <div class="gallery-item">
+                    <img src="Hidimba-Devi-Temple.jpg" alt="Hidimba-Devi-Temple" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Hidimba Devi Temple</h3>
+                        <p class="gallery-location">Manali ,Himachal Pradesh</p>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+
+
+ </main>
+ 
+<!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <a href="#" class="footer-logo">
+                <i class="fas fa-om"></i> Divine Visions
+            </a>
+            <div class="footer-links">
+                <a href="#home" class="footer-link">Home</a>
+                <a href="#about" class="footer-link">About</a>
+                <a href="#gallery" class="footer-link">Gallery</a>
+                <a href="#contact" class="footer-link">Contact</a>
+            </div>
+            <div class="footer-social">
+                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+            </div>
+            <div class="footer-contact">
+                <p><i class="fas fa-envelope"></i> contact@divinevisions.com</p>
+                <p><i class="fas fa-phone"></i> +91 76939 28292</p>
+                <p><i class="fas fa-map-marker-alt"></i> Sagar ,Madhya Pradesh, India</p>
+            </div>
+            <p class="footer-copyright">&copy; 2025 Divine Visions. All Rights Reserved.</p>
+        </div>
+    </footer>
+ 
+ <script src="script.js"></script>
+ 
+
+
+</body>
+</html>
